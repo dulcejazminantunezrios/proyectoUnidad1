@@ -24,9 +24,9 @@ export class RegistroComponent implements OnInit {
       });
     }else{
       this.setUser();
-      this.authService.register(this.user).subscribe((data:any)=>{
+      this.authService.register(this.user).subscribe((data:any) => {
         console.log('Registro completado');
-      }, error =>{
+      }, error => {
         console.log(error);
       });
     }
